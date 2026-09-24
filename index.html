@@ -1,56 +1,28 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Oran Panda X Pro</title>
-<meta name="description" content="Oran Panda X Pro - futbol bülteni, analiz, kura ve tahmin ligi uygulaması.">
-<link rel="icon" type="image/png" href="favicon.png">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oran Panda X Pro | KR8BP Labs</title>
+<meta name="description" content="Oran Panda X Pro — futbol bülteni, istatistikler, yapay zekâ destekli analizler, AI Kura, Spor Toto, puan durumları ve canlı maç deneyimi.">
+<link rel="icon" href="favicon.png" type="image/png">
 <style>
-:root{--bg:#07111f;--card:#10243a;--text:#f8fafc;--muted:#a8b6c8;--gold:#f4c542;--teal:#20c7b5;--line:#23425f}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#07111f,#0a1726);color:var(--text)}
-.wrap{max-width:1050px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;padding:10px 0 28px}
-.brand{font-weight:900;display:flex;gap:12px;align-items:center}.logo{font-size:28px;background:#10243a;border:1px solid #5a5130;border-radius:14px;padding:8px 11px}
-nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:700}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:52px 0}
-.badge{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid #2b766f;color:#8be9dc;background:#0d2b2a;font-weight:800;font-size:13px}
-h1{font-size:clamp(42px,7vw,72px);line-height:1;margin:18px 0}h1 span{color:var(--gold)}
-.lead{color:var(--muted);font-size:18px;line-height:1.65}.phone{background:linear-gradient(160deg,#112944,#0c1a2b);border:1px solid #6d6336;border-radius:32px;padding:20px}
-.screen{min-height:360px;border:1px solid var(--line);border-radius:24px;padding:28px;text-align:center}.panda{font-size:72px}
-.screen h3{color:var(--gold);font-size:24px}.screen p{color:var(--muted);line-height:1.5}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
-.card p{color:var(--muted);line-height:1.55}.legal{margin-top:24px;border:1px solid #5a5130;background:#221f12;border-radius:18px;padding:18px}
-footer{margin-top:50px;border-top:1px solid var(--line);padding:26px 0;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-footer a{color:#dbe7f3}@media(max-width:800px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
-
-.brand-logo{width:46px;height:46px;object-fit:cover;border-radius:14px;border:1px solid #6d6336;box-shadow:0 8px 24px rgba(0,0,0,.28)}
-.logo-screen{display:flex;flex-direction:column;justify-content:center;align-items:center}
-.hero-logo{width:100%;max-width:520px;height:auto;display:block;border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.35);border:1px solid rgba(244,197,66,.32)}
-
+:root{--bg:#03111d;--bg2:#071c2b;--card:#092235;--cyan:#00e8f2;--cyan2:#27a9d9;--gold:#ffc82e;--text:#f7fbff;--muted:#a9bdca;--line:rgba(60,215,238,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 50% -10%,#0a3b53 0,#061a29 34%,#020b13 78%);color:var(--text)}a{color:inherit}.shell{max-width:1480px;margin:auto;padding:0 30px}.nav{position:sticky;top:0;z-index:20;background:rgba(2,13,22,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover}.brand b{font-size:20px}.brand i{font-style:normal;color:var(--cyan)}.links{display:flex;align-items:center;gap:28px}.links a{text-decoration:none;color:#d6e5ed;font-size:14px}.support{border:1px solid var(--gold);color:var(--gold)!important;border-radius:12px;padding:11px 18px!important;font-weight:800}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid rgba(255,200,46,.2)}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 40%,rgba(0,232,242,.13),transparent 27%),radial-gradient(circle at 85% 20%,rgba(255,200,46,.12),transparent 25%);pointer-events:none}.heroGrid{min-height:600px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;padding-top:64px;padding-bottom:64px}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(52px,7vw,92px);line-height:.92;margin:18px 0 20px;letter-spacing:-.05em}.hero h1 span{background:linear-gradient(90deg,var(--cyan),#55d9ff 42%,var(--gold) 72%);-webkit-background-clip:text;color:transparent}.hero h2{font-size:clamp(22px,2.5vw,34px);margin:0 0 14px}.hero p{max-width:690px;color:#c3d4de;font-size:18px;line-height:1.7}.pills{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}.pill{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(8,35,52,.72);font-size:13px}.android{display:flex;align-items:center;gap:16px;max-width:620px;margin-top:28px;padding:17px 20px;border:1px solid rgba(0,232,242,.45);border-radius:16px;background:linear-gradient(90deg,rgba(0,232,242,.13),rgba(5,31,48,.8));box-shadow:0 0 40px rgba(0,232,242,.08)}.android strong{display:block;color:var(--cyan);font-size:18px}.android small{color:#b9cbd5}.android .ico{font-size:34px}.visual{position:relative}.visual img{display:block;width:100%;max-width:650px;margin:auto;border-radius:30px;border:1px solid rgba(255,200,46,.3);box-shadow:0 35px 90px rgba(0,0,0,.55)}.visual:after{content:"";position:absolute;inset:12% 8%;z-index:-1;background:var(--cyan);filter:blur(90px);opacity:.12}
+.section{padding:70px 0}.sectionTitle{text-align:center;margin-bottom:36px}.sectionTitle h2{font-size:36px;margin:0 0 8px}.sectionTitle h2 span{color:var(--cyan)}.sectionTitle p{color:var(--muted);margin:0}.features{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.card{min-height:170px;padding:24px 18px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(180deg,rgba(9,34,53,.92),rgba(4,21,33,.92));text-align:center;transition:.25s}.card:hover{transform:translateY(-4px);border-color:rgba(0,232,242,.55);box-shadow:0 14px 35px rgba(0,0,0,.25)}.icon{font-size:34px;margin-bottom:12px}.card h3{font-size:16px;margin:0 0 9px}.card p{font-size:13px;line-height:1.55;color:var(--muted);margin:0}.cyan{color:var(--cyan)}.gold{color:var(--gold)}
+.preview{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(0,0,0,.12)}.previewImg{display:block;width:100%;border-radius:22px;border:1px solid rgba(0,232,242,.25);box-shadow:0 30px 80px rgba(0,0,0,.42)}.note{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}.bottom{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#061724}.bottom>div{padding:30px;border-right:1px solid var(--line)}.bottom>div:last-child{border-right:0}.bottom h3{margin:0 0 12px;font-size:20px}.bottom p,.bottom a{color:var(--muted);font-size:14px;line-height:1.65}.bottom a{display:block;margin:9px 0;text-decoration:none}.bottom a:hover{color:var(--cyan)}.mail{display:inline-block!important;border:1px solid var(--cyan);color:var(--cyan)!important;padding:10px 13px;border-radius:10px}.disclaimer{margin-top:24px;padding:20px;border:1px solid rgba(255,200,46,.25);background:rgba(255,200,46,.06);border-radius:14px;color:#d8d5c7;line-height:1.6;font-size:14px}.footer{padding:28px 0;color:#8297a5;font-size:13px;border-top:1px solid var(--line)}.footerin{display:flex;justify-content:space-between;gap:20px;align-items:center}.footerBrand{display:flex;align-items:center;gap:10px;color:white;font-weight:800}.footerBrand img{width:34px;height:34px;border-radius:50%}
+@media(max-width:1050px){.features{grid-template-columns:repeat(2,1fr)}.bottom{grid-template-columns:1fr 1fr}.bottom>div:nth-child(2){border-right:0}.bottom>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.heroGrid{grid-template-columns:1fr}.visual{max-width:760px;margin:auto}.links a:not(.support){display:none}}
+@media(max-width:620px){.shell{padding:0 18px}.brand b{font-size:16px}.support{padding:9px 11px!important}.heroGrid{padding-top:45px;min-height:auto}.hero h1{font-size:52px}.hero p{font-size:16px}.features{grid-template-columns:1fr}.bottom{grid-template-columns:1fr}.bottom>div{border-right:0!important;border-bottom:1px solid var(--line)}.bottom>div:last-child{border-bottom:0}.footerin{align-items:flex-start;flex-direction:column}.section{padding:52px 0}}
 </style>
-</head>
-<body>
-<div class="wrap">
-<header><div class="brand"><img class="brand-logo" src="favicon.png" alt="Oran Panda X Pro logo">ORAN PANDA X PRO</div><nav><a href="#ozellikler">Özellikler</a><a href="privacy.html">Gizlilik</a></nav></header>
+</head><body>
+<header class="nav"><div class="shell navin"><div class="brand"><img src="favicon.png" alt="Oran Panda X Pro logo"><b>ORAN PANDA <i>X PRO</i></b></div><nav class="links"><a href="#ana">Ana Sayfa</a><a href="#ozellikler">Özellikler</a><a href="#ekranlar">Ekran Görüntüleri</a><a href="#hakkinda">Hakkında</a><a href="#iletisim">İletişim</a><a class="support" href="mailto:support.kr8bp@gmail.com">✉ Destek</a></nav></div></header>
 <main>
-<section class="hero">
-<div><div class="badge">⚽ FUTBOL VERİ & ANALİZ</div><h1>Oran Panda <span>X Pro</span></h1>
-<p class="lead">Futbol bülteni, takım istatistikleri, oran analizi, kura ve Tahmin Ligi deneyimini tek uygulamada birleştiren Android platformu.</p></div>
-<div class="phone"><div class="screen logo-screen"><img class="hero-logo" src="oran-panda-x-pro-logo.png" alt="Oran Panda X Pro resmi logosu"><p>Veriyi sade, hızlı ve kullanışlı bir futbol analiz deneyimine dönüştürür.</p></div></div>
-</section>
-<section id="ozellikler">
-<h2>Uygulama özellikleri</h2>
-<div class="grid">
-<div class="card"><h3>📋 Güncel Bülten</h3><p>Maçları lig, tarih, saat ve bahis seçenekleriyle görüntüleyin.</p></div>
-<div class="card"><h3>📈 Takım Analizi</h3><p>Takım geçmişi ve istatistiklerinden üretilen analiz verilerine erişin.</p></div>
-<div class="card"><h3>🎯 Kura Sistemi</h3><p>Belirlenen analiz ölçütlerine göre uygun maçları filtreleyin.</p></div>
-<div class="card"><h3>🏆 Tahmin Ligi</h3><p>Panda Puanı ile haftalık ve aylık performansınızı takip edin.</p></div>
-<div class="card"><h3>🔔 Bildirimler</h3><p>Önemli uygulama güncellemelerini ve ilgili bildirimleri alın.</p></div>
-<div class="card"><h3>🔐 Hesap</h3><p>Firebase tabanlı hesap sistemiyle uygulama profilinizi yönetin.</p></div>
-</div>
-<div class="legal"><strong>Bilgilendirme:</strong> Oran Panda X Pro analiz ve bilgilendirme amaçlıdır. Gerçek para yatırma veya çekme hizmeti sunmaz.</div>
-</section>
-</main>
-<footer><div>© 2026 Oran Panda X Pro</div><div><a href="privacy.html">Gizlilik Politikası</a> · <a href="account-deletion.html">Hesap Silme</a></div></footer>
-</div>
-</body>
-</html>
+<section class="hero" id="ana"><div class="shell heroGrid"><div><div class="eyebrow">⚽ Futbol veri • analiz • yapay zekâ</div><h1>ORAN PANDA<br><span>X PRO</span></h1><h2>Yapay Zekâ Destekli Spor Analiz Uygulaması</h2><p>Güncel bültenler, detaylı istatistikler, yapay zekâ destekli analiz araçları, performans takibi ve çok daha fazlasıyla futbol verilerini tek bir modern deneyimde bir araya getirir.</p><div class="pills"><span class="pill">📈 Güncel Veriler</span><span class="pill">🧠 Yapay Zekâ Analizleri</span><span class="pill">🛡️ Güvenilir İstatistikler</span><span class="pill">⭐ Kullanıcı Dostu Arayüz</span></div><div class="android"><div class="ico">🤖</div><div><strong>Android için geliştiriliyor</strong><small>ORAN PANDA X PRO yakında Google Play'de.</small></div></div></div><div class="visual"><img src="oran-panda-x-pro-logo.png" alt="Oran Panda X Pro resmi logo ve marka görseli"></div></div></section>
+<section class="section" id="ozellikler"><div class="shell"><div class="sectionTitle"><h2>UYGULAMA ÖZELLİKLERİ <span>X PRO</span></h2><p>Futbolu daha derinlemesine analiz et, veriyi tek ekranda takip et.</p></div><div class="features">
+<div class="card"><div class="icon cyan">▤</div><h3>Güncel Bülten</h3><p>Günün maçları, oranlar ve detaylı bülten bilgileri.</p></div><div class="card"><div class="icon cyan">▥</div><h3>Dashboard</h3><p>Özet istatistikler ve kişisel analiz ekranı.</p></div><div class="card"><div class="icon">🧠</div><h3>AI Tahminleri</h3><p>Verilerden üretilen yapay zekâ destekli maç analizleri.</p></div><div class="card"><div class="icon cyan">↗</div><h3>AI Performans</h3><p>Tahmin performansı ve dönemsel başarı istatistikleri.</p></div><div class="card"><div class="icon gold">★</div><h3>AI Kura</h3><p>Kura analizleri ve filtrelenmiş maç senaryoları.</p></div>
+<div class="card"><div class="icon gold">◎</div><h3>Spor Toto</h3><p>Spor Toto maçları ve özel analiz araçları.</p></div><div class="card"><div class="icon cyan">☷</div><h3>Puan Durumları</h3><p>Liglerde güncel puan durumları ve istatistikler.</p></div><div class="card"><div class="icon cyan">▶</div><h3>Canlı Maçlar</h3><p>Canlı skorlar, maç bilgileri ve anlık takip.</p></div><div class="card"><div class="icon">📺</div><h3>TV'de Bugün</h3><p>Bugün hangi maçın hangi kanalda olduğunu görüntüle.</p></div><div class="card"><div class="icon cyan">♙</div><h3>Kullanıcı Hesabı</h3><p>Kişisel ayarlar, favoriler ve hesap özellikleri.</p></div>
+</div></div></section>
+<section class="section preview" id="ekranlar"><div class="shell"><div class="sectionTitle"><h2>PROFESYONEL <span>ÜRÜN DENEYİMİ</span></h2><p>Yeni web tasarımının hedeflediği premium Oran Panda X Pro görünümü.</p></div><img class="previewImg" src="site-preview.png" alt="Oran Panda X Pro yeni web sitesi tasarım önizlemesi"><div class="note">Uygulama geliştirme sürecinde ekran içerikleri ve özellikler güncellenebilir.</div></div></section>
+<section class="section" id="hakkinda"><div class="shell"><div class="bottom"><div><h3><span class="cyan">&lt;/&gt;</span> KR8BP Labs</h3><p>Innovative Apps for a Smarter Tomorrow</p><p>ORAN PANDA X PRO, KR8BP Labs tarafından geliştirilen modern bir spor analiz ve bilgilendirme uygulamasıdır.</p></div><div id="iletisim"><h3>✉ İletişim & Destek</h3><p>Her türlü soru, öneri ve teknik destek için bizimle iletişime geçebilirsiniz.</p><a class="mail" href="mailto:support.kr8bp@gmail.com">support.kr8bp@gmail.com</a></div><div><h3>🛡 Yasal Bilgiler</h3><a href="privacy.html">Gizlilik Politikası →</a><a href="account-deletion.html">Hesap Silme →</a><a href="app-ads.txt">app-ads.txt →</a></div><div><h3>ⓘ Uygulama Hakkında</h3><p>İstatistik ve analiz odaklı spor uygulamasıdır. Herhangi bir bahis oynatma, para yatırma veya çekme hizmeti sunmaz.</p></div></div><div class="disclaimer"><strong>Bilgilendirme:</strong> ORAN PANDA X PRO; istatistik, analiz ve bilgilendirme amaçlıdır. Gerçek para ile bahis oynatma, para yatırma veya para çekme hizmeti sunmaz. Analiz ve tahmin içerikleri kesin sonuç garantisi değildir.</div></div></section>
+</main><footer class="footer"><div class="shell footerin"><div class="footerBrand"><img src="favicon.png" alt=""> ORAN PANDA X PRO</div><div>© 2026 KR8BP Labs. Tüm hakları saklıdır.</div></div></footer>
+</body></html>
