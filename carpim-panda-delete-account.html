@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Çarpım Panda Hesap ve Veri Silme | KR8BP Labs</title>
+  <meta name="description" content="Çarpım Panda hesap ve veri silme talebi.">
+  <style>
+    :root{--navy:#0b2b46;--blue:#1976d2;--sky:#eef8ff;--gold:#ffbf2f;--ink:#17212b;--muted:#607586;--line:#dbe7ef}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#eef8ff,#fff);color:var(--ink);line-height:1.65}
+    .wrap{max-width:820px;margin:0 auto;padding:28px 18px 56px}
+    .hero{background:linear-gradient(135deg,var(--navy),#135783);color:#fff;border-radius:26px;padding:30px;box-shadow:0 14px 38px rgba(11,43,70,.16)}
+    h1{font-size:34px;line-height:1.15;margin:6px 0 8px}
+    h2{font-size:22px;color:var(--navy);margin:0 0 10px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:18px;box-shadow:0 8px 26px rgba(40,83,111,.07)}
+    .step{display:flex;gap:14px;margin:16px 0}
+    .num{flex:0 0 34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:800}
+    .btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:12px;margin:8px 0}
+    .warn{background:#fff8dd;border-left:5px solid var(--gold);padding:14px 16px;border-radius:12px}
+    .danger{background:#fff1f1;border-left:5px solid #e34b4b;padding:14px 16px;border-radius:12px}
+    a{color:#0d67b5}
+    .small{font-size:14px;color:var(--muted)}
+    .footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:600px){h1{font-size:28px}.hero,.card{padding:20px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div style="font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#cfeaff">KR8BP Labs</div>
+    <h1>Çarpım Panda Hesap ve Veri Silme</h1>
+    <p style="margin:0;color:#e9f6ff">Google Play hesap silme talebi için herkese açık web sayfası</p>
+  </section>
+
+  <section class="card">
+    <h2>Hesabınızı ve ilişkili verileri silebilirsiniz</h2>
+    <p>Çarpım Panda içinde Google veya e-posta ile bir hesap oluşturduysanız, hesabınızın ve bu hesapla ilişkilendirilebilen Çarpım Panda bulut verilerinin silinmesini talep edebilirsiniz.</p>
+    <p><strong>Uygulama:</strong> Çarpım Panda<br>
+       <strong>Paket adı:</strong> com.carpimpanda.app<br>
+       <strong>Geliştirici:</strong> KR8BP Labs</p>
+  </section>
+
+  <section class="card">
+    <h2>Silme talebi nasıl oluşturulur?</h2>
+
+    <div class="step">
+      <div class="num">1</div>
+      <div><strong>Kayıtlı hesabınızın e-posta adresini kullanın.</strong><br>Hesap size aitse mümkünse Çarpım Panda'ya giriş yaptığınız e-posta adresinden iletişim kurun.</div>
+    </div>
+
+    <div class="step">
+      <div class="num">2</div>
+      <div><strong>Aşağıdaki düğmeyle silme talebi gönderin.</strong><br>Konu satırı otomatik olarak “Çarpım Panda Hesap Silme Talebi” şeklinde hazırlanır.</div>
+    </div>
+
+    <a class="btn" href="mailto:support.kr8bp@gmail.com?subject=%C3%87arp%C4%B1m%20Panda%20Hesap%20Silme%20Talebi&body=Merhaba%20KR8BP%20Labs%2C%0A%0A%C3%87arp%C4%B1m%20Panda%20hesab%C4%B1m%C4%B1n%20ve%20bu%20hesapla%20ili%C5%9Fkili%20verilerin%20silinmesini%20talep%20ediyorum.%0A%0AHesapta%20kulland%C4%B1%C4%9F%C4%B1m%20e-posta%3A%20%0ATakma%20ad%C4%B1m%20(varsa)%3A%20%0A%0AL%C3%BCtfen%20hesap%20ve%20ili%C5%9Fkili%20veri%20silme%20i%C5%9Flemini%20ba%C5%9Flat%C4%B1n.">Hesap Silme Talebi Gönder</a>
+
+    <p>Manuel olarak da şu adrese e-posta gönderebilirsiniz:<br>
+      <a href="mailto:support.kr8bp@gmail.com"><strong>support.kr8bp@gmail.com</strong></a>
+    </p>
+
+    <div class="danger"><strong>Parolanızı göndermeyin.</strong> KR8BP Labs hesap silme talebi için sizden Google veya e-posta hesabınızın parolasını istemez.</div>
+  </section>
+
+  <section class="card">
+    <h2>Hangi veriler silinir?</h2>
+    <p>Talep doğrulandıktan sonra, hesaba bağlı olduğu ölçüde aşağıdaki veriler silinmek üzere işleme alınır:</p>
+    <ul>
+      <li>Çarpım Panda için kullanılan Firebase Authentication hesabı.</li>
+      <li>Firebase kullanıcı kimliği (UID) ile ilişkili Çarpım Panda kullanıcı kaydı.</li>
+      <li>Takma ad/avatar gibi bulut profil verileri.</li>
+      <li>Haftalık ve aylık Panda Ligi kayıtları ve puanları.</li>
+      <li>Hesapla ilişkilendirilebilen diğer Çarpım Panda bulut ilerleme verileri.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Cihazdaki yerel veriler</h2>
+    <p>Hesap silme işlemi, cihazda yalnızca yerel olarak tutulan uygulama verilerini her durumda uzaktan silemeyebilir. Bu verileri silmek için:</p>
+    <ul>
+      <li>Çarpım Panda uygulamasını cihazdan kaldırabilir veya</li>
+      <li>Android Ayarlar → Uygulamalar → Çarpım Panda → Depolama → Verileri temizle adımını kullanabilirsiniz.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Ebeveyn / veli talepleri</h2>
+    <p>Çarpım Panda çocuklara yönelik eğitsel bir uygulamadır. Bir ebeveyn veya veli, çocuğuna ait olabilecek bir Çarpım Panda hesabı ya da ilişkili veri konusunda silme talebi oluşturabilir. Talebin doğru hesaba uygulandığından emin olmak için makul bir hesap doğrulaması istenebilir.</p>
+  </section>
+
+  <section class="card">
+    <h2>Saklanabilecek sınırlı veriler</h2>
+    <p>Yasal yükümlülük, güvenlik veya kötüye kullanımın önlenmesi gibi meşru ve zorunlu bir neden bulunursa yalnızca gerekli olan sınırlı kayıtlar gerekli süre boyunca tutulabilir. Böyle bir saklama, silinmesi gereken aktif uygulama hesabının açık tutulması anlamına gelmez.</p>
+  </section>
+
+  <section class="card">
+    <h2>Gizlilik politikası</h2>
+    <p>Çarpım Panda'nın veri işleme uygulamaları hakkında daha fazla bilgi:</p>
+    <p><a href="carpim-panda-privacy.html">Çarpım Panda Gizlilik Politikası</a></p>
+  </section>
+
+  <section class="card">
+    <h2>İletişim</h2>
+    <p><strong>KR8BP Labs</strong><br>
+       <a href="mailto:support.kr8bp@gmail.com">support.kr8bp@gmail.com</a></p>
+    <p class="small">Son güncelleme: 4 Ekim 2026</p>
+  </section>
+
+  <div class="footer">© 2026 KR8BP Labs · Çarpım Panda</div>
+</main>
+</body>
+</html>
