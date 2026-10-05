@@ -36,12 +36,30 @@ h1,h2,h3,.brand-title{font-family:'Orbitron','Montserrat',Arial,sans-serif;lette
 .menu a,.btn,.detail,.supportbtn,.contact,.all{font-family:'Montserrat',Arial,sans-serif;font-weight:700}
 .eye{font-family:'Montserrat',Arial,sans-serif;font-weight:800;letter-spacing:.18em}
 .hero p,.sh p,.b p,.b li,.trust,.foot{font-family:'Montserrat',Arial,sans-serif}
+
+/* V12.3 - Orbitron genişliği sonrası hero taşma düzeltmesi */
+.hero{grid-template-columns:minmax(0,700px) minmax(0,1fr);gap:36px}
+.hl{grid-template-columns:235px minmax(0,1fr);gap:22px;min-width:0}
+.hl>img{width:235px}
+.hl>div{min-width:0;overflow:visible}
+.hero h1{font-size:27px!important;white-space:normal!important;max-width:100%;overflow-wrap:normal}
+.features{grid-template-columns:repeat(4,minmax(72px,1fr));gap:8px;width:100%}
+.f{min-width:0;font-size:12px}
+.hb{min-width:0}
+@media(max-width:1280px){
+ .hero{grid-template-columns:1fr!important}
+ .hl{max-width:760px}
+ .hb{height:300px}
+}
+
+.gp-link{display:block;width:126px;height:44px}
+.gp-badge{display:block;width:126px;height:44px;object-fit:contain}
 </style><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
 </head><body><header><div class="w nav"><a class="brand" href="#"><img src="assets/img/v9-header.jpg" alt="KR8BP Labs"></a><nav class="menu"><a class="active" href="#">Ana Sayfa</a><a href="#apps">Uygulamalar</a><a href="#about">Hakkımızda</a><a href="#support">Destek</a><a href="#contact">İletişim</a><a class="contact" href="https://t.me/kr8bplabs"><img class="contacticon" src="https://cdn.simpleicons.org/telegram/26A5E4" alt="">Bize Ulaşın</a></nav></div></header><main class="w"><section class="hero"><div class="hl"><img src="assets/img/v9-logo.jpg" alt="KR8BP Labs"><div><div class="eye">RESMİ GELİŞTİRİCİ SİTESİ</div><h1>Oyun • Eğitim • Spor Teknolojileri</h1><p>Daha eğlenceli, daha akıllı ve daha iyi mobil deneyimler geliştiriyoruz.</p><div class="features"><div class="f"><div class="i">🎮</div>Eğlenceli<br>Oyunlar</div><div class="f"><div class="i">🎓</div>Eğitici<br>Uygulamalar</div><div class="f"><div class="i">📊</div>Spor Analizi<br>ve Tahmin</div><div class="f"><div class="i">🧠</div>Yapay Zekâ<br>Desteği</div></div></div></div><div class="hb"><img src="assets/img/v9-hero.jpg" alt="KR8BP Labs uygulamaları"></div></section><section class="apps" id="apps"><div class="sh"><h2>Uygulamalarımız</h2><span class="rule"></span><p>Farklı alanlarda geliştirdiğimiz mobil uygulamalarla her yaşa ve ihtiyaca uygun çözümler sunuyoruz.</p><a class="all" href="#apps">Tüm Uygulamaları Gör →</a></div><div class="grid">
-<article class="card oran"><img class="art" src="assets/img/v9-oran.jpg"><div class="b"><h3>ORAN PANDA X PRO</h3><p>Spor analizi, istatistik ve yapay zekâ destekli tahmin teknolojileri.</p><ul><li>IDDAA Bülten ve Analiz</li><li>AI Tahminleri</li><li>Canlı Maçlar ve Puan Durumları</li></ul><div class="actions"><a class="btn" href="apps/oran-panda-x-pro/">Uygulamayı İncele →</a><span class="gp-link"><img class="gp-badge" src="https://static.openfoodfacts.org/images/misc/playstore/img/latest/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play"></span><a class="detail" href="apps/oran-panda-x-pro/">ⓘ Detaylı Bilgi</a></div></div></article>
-<article class="card stack"><img class="art" src="assets/img/v9-stack.jpg"><div class="b"><h3>PANDA STACK</h3><p>Fizik tabanlı, eğlenceli ve modern kule oyunu.</p><ul><li>Denge ve Zamanlama</li><li>Farklı Oyun Modları</li><li>Liderlik Tablosu</li></ul><div class="actions"><a class="btn" href="apps/panda-stack/">Oyunu İncele →</a><span class="gp-link"><img class="gp-badge" src="https://static.openfoodfacts.org/images/misc/playstore/img/latest/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play"></span><a class="detail" href="apps/panda-stack/">ⓘ Detaylı Bilgi</a></div></div></article>
+<article class="card oran"><img class="art" src="assets/img/v9-oran.jpg"><div class="b"><h3>ORAN PANDA X PRO</h3><p>Spor analizi, istatistik ve yapay zekâ destekli tahmin teknolojileri.</p><ul><li>IDDAA Bülten ve Analiz</li><li>AI Tahminleri</li><li>Canlı Maçlar ve Puan Durumları</li></ul><div class="actions"><a class="btn" href="apps/oran-panda-x-pro/">Uygulamayı İncele →</a><span class="gp-link" title="Google Play bağlantısı"><img class="gp-badge" src="https://static.openfoodfacts.org/images/misc/playstore/img/latest/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play"></span><a class="detail" href="apps/oran-panda-x-pro/">ⓘ Detaylı Bilgi</a></div></div></article>
+<article class="card stack"><img class="art" src="assets/img/v9-stack.jpg"><div class="b"><h3>PANDA STACK</h3><p>Fizik tabanlı, eğlenceli ve modern kule oyunu.</p><ul><li>Denge ve Zamanlama</li><li>Farklı Oyun Modları</li><li>Liderlik Tablosu</li></ul><div class="actions"><a class="btn" href="apps/panda-stack/">Oyunu İncele →</a><a class="gp-link" href="https://play.google.com/store/apps/details?id=com.pandastackgames.pandastack" target="_blank" rel="noopener"><img class="gp-badge" src="https://static.openfoodfacts.org/images/misc/playstore/img/latest/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play"></a><a class="detail" href="apps/panda-stack/">ⓘ Detaylı Bilgi</a></div></div></article>
 <article class="card carpim"><img class="art" src="assets/img/v9-carpim.jpg"><div class="b"><h3>ÇARPIM PANDA</h3><p>Çocuklar için eğlenceli çarpım tablosu eğitim oyunu.</p><ul><li>Çarpım Adası</li><li>Mini Oyunlar</li><li>Gelişim ve Ödüller</li></ul><div class="actions"><a class="btn" href="apps/carpim-panda/">Oyunu İncele →</a><span class="coming">Google Play’de<br>Yakında</span><a class="detail" href="apps/carpim-panda/">ⓘ Detaylı Bilgi</a></div></div></article>
 </div></section><section class="trust" id="about"><div>🛡️ <b>Güvenli ve Gizli Veri</b>Kullanıcı gizliliğine önem veriyoruz.</div><div>👥 <b>Her Yaşa Uygun</b>Çocuklardan yetişkinlere.</div><div>⚙️ <b>Sürekli Gelişim</b>Daha iyi bir deneyim için.</div><div>🏆 <b>Kaliteli ve Güvenilir</b>Kullanıcı memnuniyeti önceliğimiz.</div></section></main><div class="w supportbar" id="contact">
 <a class="supportbtn telegram" href="https://t.me/kr8bplabs"><img class="socialicon" src="https://cdn.simpleicons.org/telegram/26A5E4" alt="">Telegram</a>
