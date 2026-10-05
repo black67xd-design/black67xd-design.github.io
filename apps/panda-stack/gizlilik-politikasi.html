@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Panda Stack - Gizlilik Politikası</title>
+  <style>
+    :root{
+      --bg:#06182c; --card:#0b2843; --card2:#0f3555; --text:#edf6ff;
+      --muted:#a9bfd4; --accent:#2dd4bf; --gold:#ffd166; --line:#1d496a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Arial,Helvetica,sans-serif; line-height:1.65;
+      background:linear-gradient(180deg,#06182c,#071f36 45%,#06182c);
+      color:var(--text);
+    }
+    .wrap{max-width:980px;margin:auto;padding:28px 18px 56px}
+    .hero{
+      background:linear-gradient(135deg,#0b2843,#103d61);
+      border:1px solid var(--line); border-radius:24px; padding:28px;
+      box-shadow:0 16px 50px rgba(0,0,0,.25);
+    }
+    h1{margin:0 0 8px;font-size:2rem}
+    h2{margin-top:30px;color:var(--gold)}
+    h3{color:var(--accent)}
+    p,li{color:#e8f2fb}
+    .muted{color:var(--muted)}
+    .pill{
+      display:inline-block;padding:6px 10px;border-radius:999px;
+      background:#0a3a4b;color:#8ff7e9;margin:5px 6px 0 0;font-size:.92rem
+    }
+    .box{
+      margin-top:18px;background:var(--card);border:1px solid var(--line);
+      border-radius:18px;padding:20px
+    }
+    a{color:#7dd3fc}
+    code{color:#fff0b3}
+    footer{margin-top:36px;color:var(--muted);font-size:.92rem}
+    .important{
+      border-left:4px solid var(--gold);padding:12px 16px;background:#2c2a18;
+      border-radius:10px
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>Panda Stack - Gizlilik Politikası</h1>
+    <p class="muted">Son güncelleme: 15 Eylül 2026</p>
+    <span class="pill">Uygulama: Panda Stack</span>
+    <span class="pill">Paket adı: com.pandastackgames.pandastack</span>
+    <span class="pill">Geliştirici: Panda Stack Games</span>
+  </section>
+
+  <section class="box">
+    <p>
+      Bu Gizlilik Politikası, <strong>Panda Stack</strong> mobil oyununun kullanıcı verilerini
+      nasıl işlediğini açıklar. Uygulamayı kullanarak bu politikada açıklanan veri işleme
+      uygulamalarını okuduğunuzu kabul etmiş olursunuz.
+    </p>
+  </section>
+
+  <h2>1. İşlediğimiz veriler</h2>
+  <div class="box">
+    <h3>Hesap ve kimlik doğrulama verileri</h3>
+    <ul>
+      <li>Firebase kullanıcı kimliği (UID)</li>
+      <li>E-posta adresi</li>
+      <li>Oyuncu görünen adı</li>
+      <li>Google ile giriş kullanılırsa Google hesabından kimlik doğrulama için gereken bilgiler</li>
+    </ul>
+    <p>
+      E-posta/şifre ile girişte şifreler Firebase Authentication tarafından işlenir.
+      Geliştirici şifrelerinizi düz metin olarak saklamaz.
+    </p>
+
+    <h3>Oyun ve ilerleme verileri</h3>
+    <ul>
+      <li>Panda Coin bakiyesi, seviye ve XP</li>
+      <li>Toplam oyun, küp, perfect yerleştirme ve fever sayıları</li>
+      <li>Seçili panda görünümü/skin bilgisi</li>
+      <li>Oyun modu skorları ve rekorlar</li>
+      <li>Liderlik tablosu skorları</li>
+      <li>Haftalık turnuva ve meydan okuma skorları</li>
+      <li>Meydan okuma kodu, oluşturan oyuncunun UID'si ve görünen adı</li>
+      <li>Güncelleme zamanları gibi teknik zaman damgaları</li>
+    </ul>
+
+    <h3>Yerel cihaz verileri</h3>
+    <p>
+      Oyun ayarları ve bazı ilerleme bilgileri, cihaz üzerinde yerel depolamada
+      (ör. SharedPreferences) tutulabilir.
+    </p>
+  </div>
+
+  <h2>2. Verileri hangi amaçlarla kullanıyoruz?</h2>
+  <div class="box">
+    <ul>
+      <li>Kullanıcı hesabı oluşturmak ve oturum açmayı sağlamak</li>
+      <li>Oyun ilerlemesini bulutta saklamak ve cihazlar arasında senkronize etmek</li>
+      <li>Liderlik tabloları, turnuvalar ve meydan okumaları çalıştırmak</li>
+      <li>Kullanıcının profil adını ve rekorlarını göstermek</li>
+      <li>Hesap güvenliği, hata giderme ve hizmetin bütünlüğünü korumak</li>
+    </ul>
+  </div>
+
+  <h2>3. Üçüncü taraf hizmetler</h2>
+  <div class="box">
+    <p>Panda Stack aşağıdaki Google/Firebase hizmetlerini kullanır:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> - hesap oluşturma ve oturum açma</li>
+      <li><strong>Cloud Firestore</strong> - profil, ilerleme, skor, liderlik ve turnuva verileri</li>
+      <li><strong>Google Sign-In</strong> - Google hesabı ile giriş</li>
+    </ul>
+    <p>
+      Bu hizmetler, verileri kendi şartları ve gizlilik politikaları kapsamında
+      Google altyapısında işleyebilir. Veriler, hizmetin sağlanması için Türkiye dışında
+      bulunan sunucularda da işlenebilir.
+    </p>
+  </div>
+
+  <h2>4. Herkese görünür olabilecek veriler</h2>
+  <div class="box">
+    <p>
+      Online liderlik, turnuva veya meydan okuma özelliklerini kullandığınızda
+      <strong>görünen adınız ve skorunuz</strong> diğer oyunculara gösterilebilir.
+      E-posta adresiniz liderlik tablosunda herkese açık şekilde gösterilmez.
+    </p>
+  </div>
+
+  <h2>5. Toplamadığımız hassas veri türleri</h2>
+  <div class="box">
+    <p>Mevcut sürümün temel oyun işlevleri aşağıdaki verilere ihtiyaç duymaz:</p>
+    <ul>
+      <li>Kesin konum</li>
+      <li>Kişiler/rehber</li>
+      <li>SMS veya arama kayıtları</li>
+      <li>Mikrofon kayıtları</li>
+      <li>Kamera görüntüleri</li>
+      <li>Sağlık verileri</li>
+      <li>Finansal hesap veya ödeme kartı bilgileri</li>
+    </ul>
+  </div>
+
+  <h2>6. Veri güvenliği</h2>
+  <div class="box">
+    <p>
+      Bulut bağlantılarında Firebase/Google tarafından sağlanan güvenli ağ bağlantıları
+      kullanılır. Yetkisiz erişim, değişiklik, ifşa veya kayba karşı makul teknik ve
+      organizasyonel önlemler uygulanır. İnternet üzerinden hiçbir aktarım veya depolama
+      yöntemi yüzde 100 güvenlik garantisi vermez.
+    </p>
+  </div>
+
+  <h2>7. Veri saklama</h2>
+  <div class="box">
+    <p>
+      Hesap ve oyun verileri, hesabınız aktif olduğu veya hizmeti sunmak için gerekli olduğu
+      sürece saklanabilir. Hesap silme talebi alındığında, hesabınızla ilişkili veriler
+      silinir veya kimliğinizle ilişkilendirilemeyecek şekilde kaldırılır; yalnızca kanunen
+      saklanması zorunlu olan veya güvenlik/sahtekarlık önleme amacıyla tutulması gereken
+      sınırlı kayıtlar varsa bunlar gerekli süre boyunca tutulabilir.
+    </p>
+  </div>
+
+  <h2 id="hesap-silme">8. Hesap ve veri silme</h2>
+  <div class="box">
+    <p>
+      Panda Stack hesabınızın ve ilişkili verilerinizin silinmesini talep edebilirsiniz.
+      Talebiniz; Firebase Authentication hesabınızı ve kullanıcı UID'nizle ilişkilendirilmiş
+      profil, skor, liderlik, turnuva ve meydan okuma verilerinizi kapsar.
+    </p>
+    <div class="important">
+      <strong>Silme talebi:</strong>
+      <a href="hesap-silme.html">Panda Stack hesap silme sayfasını açın</a>
+      veya <a href="mailto:support.kr8bp@gmail.com?subject=Panda%20Stack%20Hesap%20Silme%20Talebi">support.kr8bp@gmail.com</a>
+      adresine kayıtlı e-posta adresinizden yazın.
+    </div>
+    <p>
+      Kimliğinizi ve hesabın size ait olduğunu doğrulamak için makul doğrulama adımları
+      uygulanabilir.
+    </p>
+  </div>
+
+  <h2>9. Çocukların gizliliği</h2>
+  <div class="box">
+    <p>
+      Bir ebeveyn veya yasal vasi, bir çocuğa ait kişisel verinin uygulama üzerinden
+      işlendiğini düşünüyorsa aşağıdaki iletişim adresinden bize ulaşabilir ve silme talebinde
+      bulunabilir.
+    </p>
+  </div>
+
+  <h2>10. Politika değişiklikleri</h2>
+  <div class="box">
+    <p>
+      Bu politika, uygulamadaki özellikler veya yasal gereklilikler değiştiğinde
+      güncellenebilir. Güncel sürüm bu sayfada yayımlanır ve "Son güncelleme" tarihi değiştirilir.
+    </p>
+  </div>
+
+  <h2>11. İletişim</h2>
+  <div class="box">
+    <p><strong>Geliştirici:</strong> Panda Stack Games</p>
+    <p><strong>E-posta:</strong> <a href="mailto:support.kr8bp@gmail.com">support.kr8bp@gmail.com</a></p>
+    <p><strong>Uygulama:</strong> Panda Stack</p>
+    <p><strong>Paket:</strong> <code>com.pandastackgames.pandastack</code></p>
+  </div>
+
+  <footer>
+    © 2026 Panda Stack Games. Panda Stack.
+  </footer>
+</div>
+</body>
+</html>
